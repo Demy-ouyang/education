@@ -6,11 +6,16 @@
 ### 文件结构
 ########### 目录结构描述
 
-> Readme.md                   // help
-> css
-> images
-> sass
-> web
+>Readme.md                   // help
+
+>css
+
+>images
+
+>sass
+
+>web
+
 
 
 ### 布局
