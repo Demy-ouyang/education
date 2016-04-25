@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+// [converter] $parent hack
+@mixin bg-variant($parent, $color) {
+  #{$parent} {
+    background-color: $color;
+  }
+  #{$parent}:hover,
+  #{$parent}:focus {
+    background-color: darken($color, 10%);
+  }
+}
+//
+@mixin border-radius($value:10px){
+  border-radius:$value;
+  -webkit-border-radius:$value;
+  -moz-border-radius:$value;
+}
+//
+@mixin font-size($value:12px){
+  font-size: $value;
+}
+//
+@mixin box-shadow($shadow...){
+  -webkit-box-shadow:$shadow;
+  -moz-box-shadow:$shadow;
+  box-shadow:$shadow;
+}
+//
+@mixin opacity($opacity:50) {
+  opacity: $opacity / 100;
+  filter: alpha(opacity=$opacity);
+}

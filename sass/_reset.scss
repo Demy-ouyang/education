@@ -1,0 +1,70 @@
+@charset "utf-8";
+@import "base","mixin";
+*{
+  margin:0;padding:0;
+  html{
+    height:auto;
+  }
+}
+body{
+  background:$body-bg ; font:$base-font-size "microsoft yahei"; color: $base-color; min-width: $min-width;
+}
+em,i{
+  font-style: normal;
+}
+ul{
+  list-style: none;
+  li{
+    list-style: none;
+  }
+}
+h1,h2,h3,h4,h5,h6{
+  font-weight:normal;
+}
+a{
+  color: $base-color; text-decoration: none;
+  &:hover{
+    color:$cur-color;
+  }
+  &:focus{
+    text-decoration: none;color:$cur-color;
+  }
+}
+*, :after, :before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+%clear-bj{
+  margin:0;padding:0;
+}
+%no-link{
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+  }
+}
+.img-circle{
+  @include border-radius(50%);
+}
+
+//
+label,
+input {
+ display: inline-block;font-weight: normal;
+}
+%clearfix{
+  &:before,&:after{
+    content: " ";
+    display: table;
+  }
+  &:after{
+    clear:both;
+  }
+}
+
+table{
+  th,td{
+    vertical-align: middle;
+  }
+}
