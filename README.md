@@ -19,7 +19,8 @@
 左侧固定宽度，右侧自适应，并且两列等高，使用sass编译css，例如修改`$left-width`的值就可以随时变动左侧宽度并且保持布局不会错乱。
 
 > base.scss
-```sass
+
+```scss
 $normal-margin:20px;
 $header-height:60px;
 //left
@@ -33,7 +34,8 @@ $left-li-cur-color:#009fa8;
 ```
 
 > main.scss
-```sass
+
+```scss
 
 //两列等高
   %min-height{
