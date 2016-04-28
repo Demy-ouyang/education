@@ -17,8 +17,9 @@
 
 ### 布局
 左侧固定宽度，右侧自适应，并且两列等高，使用sass编译css，例如修改`$left-width`的值就可以随时变动左侧宽度并且保持布局不会错乱。
+
+> base.scss
 ```sass
-//base.scss
 $normal-margin:20px;
 $header-height:60px;
 //left
@@ -31,8 +32,14 @@ $left-li-cur-bg:#ebeef3;
 $left-li-cur-color:#009fa8;
 ```
 
+> main.scss
 ```sass
-//main.scss
+
+//两列等高
+  %min-height{
+    padding-bottom:2000px;margin-bottom:-2000px;
+  }
+
 .page-container{
   margin:$normal-margin; margin-top:$normal-margin+$header-height; overflow: hidden;
   //左侧
