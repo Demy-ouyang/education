@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <title>管理首页</title>
-    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="css/edu-admin.css" />
+    <title>德育管理首页--规章制度详情</title>
+    <link rel="stylesheet" type="text/css" href="plugins/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="plugins/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css"/><!--table-->
+    <link rel="stylesheet" type="text/css" href="css/edu-moral.css" />
 </head>
 <body>
 <!-- 头部-->
@@ -41,15 +42,15 @@
     <div class="page-sidebar-wrapper">
         <div class="page-sidebar">
             <ul class="page-sidebar-menu">
-                <li class="nav-item active">
-                    <a href="index.html" class="nav-link">
+                <li class="nav-item">
+                    <a href="edu_moral_index.html" class="nav-link">
                         <i class="fa fa-home"></i>
                         <span class="title">首页</span>
                         <span class="en-title">Home page</span>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a href="rules.html" class="nav-link">
+                <li class="nav-item  active">
+                    <a href="javascript:;" class="nav-link">
                         <i class="fa fa-black-tie"></i>
                         <span class="title">规章制度</span>
                         <span class="en-title">rules and regulations</span>
@@ -114,14 +115,26 @@
             <!-- 面包屑-->
             <div class="page-bar">
                 <ul class="page-bar-nav">
-                    <li><a href="javascript:;">规章制度</a></li>
+                    <li><a href="javascript:;">返回<i class="fa fa-angle-right"></i></a></li>
+                    <li><a href="rules.html">规章制度<i class="fa fa-angle-right"></i></a></li>
+                    <li><a href="rules_detail.html">详情</a></li>
                 </ul>
             </div>
             <!-- 面包屑 end-->
             <!-- 右侧主要内容-->
             <div class="page-right">
-                <h3 class="top-h3"><i class="fa fa-users"></i>规章制度 </h3>
-
+                <h3 class="top-h3">
+                    <span class="title1"><i class="fa fa-list"></i>规章制度 </span>
+                </h3>
+                <div class="details">
+                    <h3>学生在校使用手机规章制度</h3>
+                    <p>xxxxxxxxxxx学校2015年教师节庆祝暨表彰活动方案，XXXXXXXX学校2015年教师节庆祝暨表彰活动方案，XXXXXXXXXXXXX学校2015年教师节
+                        庆祝暨表彰活动方案，XXXXXXXXX学校2015年教师节庆祝暨表彰活动方案，XXXXXXXXX学校2015年教师节庆祝暨表彰活动方案。</p>
+                    <div class="bottom-download">
+                        <span>文件下载</span>
+                        <a href="#"><i class="fa fa-file"></i>XXXXXXXXX学校2015年教师节庆祝暨表彰活动方案.docx </a>
+                    </div>
+                </div>
             </div>
             <!-- 右侧主要内容 end-->
 
@@ -133,7 +146,13 @@
 </div>
 <!--主内容 end-->
 <script src="plugins/jquery.min.js"></script>
+<script src="plugins/bootstrbootstrap.min.js"></script>
 <script src="plugins/normal.js"></script>
+<script src="plugins/table.js"></script>
+<script type="text/javascript" src="plugins/datatables/medjquery.dataTables.min.js"></script><!--表格插件-->
+<script type="text/javascript" src="plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js"></script><!--表格插件-->
+
+
 
 </body>
 </html>
