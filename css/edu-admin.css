@@ -201,14 +201,13 @@ table th, table td {
   margin: 20px;
   margin-top: 80px;
   overflow: hidden; }
-  .page-container .page-sidebar-wrapper, .page-container .page-content-wrapper {
-    padding-bottom: 2000px;
-    margin-bottom: -2000px; }
   .page-container .page-sidebar-wrapper {
     position: relative;
     width: 218px;
     float: left;
     margin-right: -218px;
+    padding-bottom: 2000px;
+    margin-bottom: -2000px;
     background-color: #fff;
     border-right: 20px solid #e9ecf3; }
     .page-sidebar .page-sidebar-menu {
@@ -246,6 +245,8 @@ table th, table td {
   .page-container .page-content-wrapper {
     float: right;
     width: 100%;
+    padding-bottom: 2000px;
+    margin-bottom: -2000px;
     background-color: #fff;
     border-left: 20px solid #e9ecf3; }
     .page-container .page-content-wrapper .page-content {
