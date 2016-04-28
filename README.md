@@ -1,7 +1,6 @@
 # education
 学校管理系统
-- 行政管理系统http://demy-ouyang.github.io/education/web/admin/edu_admin_index.html
-- 德育管理系统http://demy-ouyang.github.io/education/web/moral/edu_moral_index.html
+- 行政管理系统http://demy-ouyang.github.io/education/index.html
 
 ### 文件结构
 ########### 目录结构描述
