@@ -70,11 +70,11 @@
   margin:$normal-margin; margin-top:$normal-margin+$header-height; overflow: hidden;
   //两列等高
   %min-height{
-    min-height:200px;height:auto !important;height:200px;
+    padding-bottom:2000px;margin-bottom:-2000px;
   }
   //左侧
   .page-sidebar-wrapper{
-    position: relative;width:$left-width + $normal-margin;float: left;margin-right: -($left-width+ $normal-margin);padding-bottom:2000px;margin-bottom:-2000px;background-color: $left-bg;border-right:20px solid $body-bg;
+    position: relative;width:$left-width + $normal-margin;float: left;margin-right: -($left-width+ $normal-margin);background-color: $left-bg;border-right:20px solid $body-bg;@extend %min-height;
     @at-root.page-sidebar{
       .page-sidebar-menu{
         width:$left-width;padding:$normal-margin 0;
@@ -110,7 +110,7 @@
   }
   //右侧
   .page-content-wrapper{
-    float: right;width:100%;padding-bottom:2000px;margin-bottom:-2000px; background-color: $left-bg;border-left:20px solid $body-bg;
+    float: right;width:100%;@extend %min-height; background-color: $left-bg;border-left:20px solid $body-bg;
     .page-content{
       margin-left:$left-width + $normal-margin;
       @at-root.page-bar{
