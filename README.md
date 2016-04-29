@@ -14,12 +14,19 @@
 >images
 
 >sass
+
 >>_base.scss
+
 >>_mixin.scss
+
 >>_news.scss
+
 >>_reset.scss
+
 >>_table.scss
+
 >>_main.scss
+
 >>edu-moral.scss
 
 >index.html
