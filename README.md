@@ -8,15 +8,36 @@
 >Readme.md                   // help
 
 >css
+>>main.css
+>>edu-moral.css
 
 >images
 
 >sass
+>>_base.scss
+>>_mixin.scss
+>>_news.scss
+>>_reset.scss
+>>_table.scss
+>>_main.scss
+>>edu-moral.scss
 
 >index.html
 
+#### SASS文件
+sass文件的后缀名有两种形式：`.sass`和`.scss`。这两种的区别在于`.sass`文件对代码的排版有着非常严格的要求，而且没有大括号，没有分号，
+sass文件中是以`.scss`为后缀的scss文件，写法较sass更贴近css的写法，更容易理解。
+@charset "utf-8";
+//引入基础模块
+@import "base","mixin";
+//引入功能模块
+@import"reset","main","news","table";
+
 ### 布局
 左侧固定宽度，右侧自适应，并且两列等高，使用sass编译css，例如修改`$left-width`的值就可以随时变动左侧宽度并且保持布局不会错乱。
+
+
+
 
 > base.scss
 
@@ -62,4 +83,7 @@ $left-li-cur-color:#009fa8;
 }
 
 ```
+
+
+> mixin.scss
 
