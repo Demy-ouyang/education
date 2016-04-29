@@ -25,18 +25,17 @@
 >index.html
 
 #### SASS文件
-sass文件的后缀名有两种形式：`.sass`和`.scss`。这两种的区别在于`.sass`文件对代码的排版有着非常严格的要求，而且没有大括号，没有分号，
-sass文件中是以`.scss`为后缀的scss文件，写法较sass更贴近css的写法，更容易理解。
-@charset "utf-8";
-//引入基础模块
-@import "base","mixin";
+sass文件的后缀名有两种形式：`.sass`和`.scss`。这两种的区别在于`.sass`文件对代码的排版有着非常严格的要求，而且没有大括号，没有分号，而`.scss`的写法和`.css`写法很相似，所以更容易理解和编写。
+`.scss`文件开头一定要加上`@charset "utf-8";`，这样文件中的中文注释才能被识别和编译，否则代码中一旦出现中文就会编译报错。
+
+SASS文件基础模块有_base.scss和_mixin.scss，这两个文件命名加前缀`__`是为了表示不需要编译成`.css`文件，直接在主要的功能模块中使用`@import "base","mixin";`引入即可。
+
 //引入功能模块
 @import"reset","main","news","table";
 
+
 ### 布局
 左侧固定宽度，右侧自适应，并且两列等高，使用sass编译css，例如修改`$left-width`的值就可以随时变动左侧宽度并且保持布局不会错乱。
-
-
 
 
 > base.scss
