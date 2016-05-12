@@ -4,34 +4,22 @@
 
 ### 文件结构
 ##### 目录结构描述
-
->Readme.md                   // help
-
->css
-
->>main.css
-
->>edu-moral.css
-
->images
-
->sass
-
->>_base.scss
-
->>_mixin.scss
-
->>_news.scss
-
->>_reset.scss
-
->>_table.scss
-
->>_main.scss
-
->>edu-moral.scss
-
->index.html
+```
+|–Readme.md                   // help
+|–css 
+    |–main.css
+    |–edu-moral.css
+|–sass 
+    |–_base.scss
+    |–_mixin.scss
+    |–_news.scss
+    |–_reset.scss
+    |–_table.scss
+    |–main.scss
+    |–edu-moral.scss
+|–images
+|–index.html
+```
 
 #### SASS文件
 sass文件的后缀名有两种形式：`.sass`和`.scss`。这两种的区别在于`.sass`文件对代码的排版有着非常严格的要求，而且没有大括号，没有分号，而`.scss`的写法和`.css`写法很相似，所以更容易理解和编写。
